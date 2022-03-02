@@ -7,8 +7,8 @@ POST http://localhost:3000/reservations
 content-type: application/json
 
 {
-  "startTime": "2022-03-02T11:00:00.000Z",
-  "endTime": "2022-03-02T14:00:00.000Z"
+  "startTime": "2022-03-02T17:00:00.000Z",
+  "endTime": "2022-03-02T18:00:00.000Z"
 }
 
 ###

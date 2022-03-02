@@ -18,12 +18,26 @@ export class ReservationsService {
         [Op.or]: [
           {
             start_time: {
-              [Op.between]: [startTime, endTime],
+              [Op.and]: [
+                {
+                  [Op.lte]: endTime,
+                },
+                {
+                  [Op.gte]: startTime,
+                },
+              ],
             },
           },
           {
             end_time: {
-              [Op.between]: [startTime, endTime],
+              [Op.and]: [
+                {
+                  [Op.lt]: endTime,
+                },
+                {
+                  [Op.gt]: startTime,
+                },
+              ],
             },
           },
           {

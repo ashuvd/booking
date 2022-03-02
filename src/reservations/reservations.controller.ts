@@ -5,8 +5,9 @@ import {
   Body,
   HttpException,
   HttpStatus,
-  Delete, Param
-} from "@nestjs/common";
+  Delete,
+  Param,
+} from '@nestjs/common';
 import { ReservationsService } from './reservations.service';
 import { ReservationModel } from './reservation.model';
 import { CreateReservationDto } from 'src/@types';
